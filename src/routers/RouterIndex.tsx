@@ -6,6 +6,8 @@ import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
 import {ROUTE_PATHS} from "./paths.main";
 import {LoginPage} from "../components/Login/Login";
 import {SignUp} from "../components/Login/SignUp";
+import {ContactsPage} from "../components/Contacts/ContactsPage";
+import {NotFoundPage} from "../components/NotFoundPage/NotFoundPage";
 
 export const RouterIndex = observer(({}) => {
     const {userInfo, loadings} = userStore
@@ -30,10 +32,10 @@ export const RouterIndex = observer(({}) => {
                     />
                     <Route exact
                            path={ROUTE_PATHS.contacts}
-                           component={() => <div>contacts</div>}
+                           component={ContactsPage}
                     />
                     <Route exact
-                           component={() => <div>404</div>}
+                           component={NotFoundPage}
                     />
                 </Switch>
             </Suspense>

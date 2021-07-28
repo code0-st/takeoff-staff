@@ -13,5 +13,26 @@
       "password": "123"
     }
   ],
-  "contacts": []
+  "contacts": [
+    {
+      "id": 12,
+      "name": "Мама",
+      "phone": "+7 (953) 076-24-67",
+      "group": {
+        "id": 1,
+        "name": "Семья"
+      },
+      "userId": 123
+    },
+    {
+      "id": 7842,
+      "group": {
+        "id": 1,
+        "name": "Семья"
+      },
+      "phone": "+7 (342) 343-24",
+      "name": "tst",
+      "userId": 9213
+    }
+  ]
 }
