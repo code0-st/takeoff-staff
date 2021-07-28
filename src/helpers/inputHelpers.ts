@@ -6,3 +6,10 @@ export const formatPhoneByPattern = (phone: string, pattern?: string) => {
     return formatStringByPattern(pattern || '+7 (999) 999-99-99', filterNumbersFromString(_phone))
 }
 
+export const filterPhone = (phone: string) => {
+    return phone
+        .replaceAll('(', '')
+        .replaceAll(')', '')
+        .replaceAll(' ', '')
+        .replaceAll('-', '')
+}
