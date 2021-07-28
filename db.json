@@ -5,12 +5,6 @@
       "name": "Кирилл Эдуардович",
       "login": "code0_st",
       "password": "q1w2e3r4"
-    },
-    {
-      "id": 9213,
-      "name": "Тестовый",
-      "login": "test",
-      "password": "123"
     }
   ],
   "contacts": [
@@ -23,16 +17,6 @@
         "name": "Семья"
       },
       "userId": 123
-    },
-    {
-      "id": 7842,
-      "group": {
-        "id": 1,
-        "name": "Семья"
-      },
-      "phone": "+7 (342) 343-24",
-      "name": "tst",
-      "userId": 9213
     },
     {
       "id": 3068,
