@@ -1,15 +1,13 @@
 import React, {Suspense} from "react";
 import {observer} from "mobx-react-lite";
-import {appStore} from "../store/initApp";
 import {userStore} from "../store/user";
 import {Loader} from "../components/common/Loader/Loader";
 import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
 import {ROUTE_PATHS} from "./paths.main";
 
 export const RouterIndex = observer(({}) => {
-    const {appLoading} = appStore
-    const {userInfo} = userStore
-    if (appLoading) {
+    const {userInfo, loadings} = userStore
+    if (loadings.appLoading) {
         return <Loader fullScreen/>
     }
     return (
