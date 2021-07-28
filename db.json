@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "id": 123,
+      "name": "Кирилл Эдуардович",
+      "login": "code0_st",
+      "password": "q1w2e3r4"
+    },
+    {
+      "id": 9213,
+      "name": "Тестовый",
+      "login": "test",
+      "password": "123"
+    }
+  ],
+  "contacts": []
+}

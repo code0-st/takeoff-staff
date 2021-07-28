@@ -4,6 +4,8 @@ import {userStore} from "../store/user";
 import {Loader} from "../components/common/Loader/Loader";
 import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
 import {ROUTE_PATHS} from "./paths.main";
+import {LoginPage} from "../components/Login/Login";
+import {SignUp} from "../components/Login/SignUp";
 
 export const RouterIndex = observer(({}) => {
     const {userInfo, loadings} = userStore
@@ -20,7 +22,11 @@ export const RouterIndex = observer(({}) => {
                     />
                     <Route exact
                            path={ROUTE_PATHS.login}
-                           component={() => <div>login</div>}
+                           component={LoginPage}
+                    />
+                    <Route exact
+                           path={ROUTE_PATHS.signUp}
+                           component={SignUp}
                     />
                     <Route exact
                            path={ROUTE_PATHS.contacts}

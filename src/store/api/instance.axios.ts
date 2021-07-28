@@ -8,12 +8,13 @@ export const instanceAxiosOpen = () =>
             ContentTye: 'application/json',
         }
     })
+// Имитация закрытых запросов сервера для последующей передачи токена.
 
 export const instanceAxiosClose = (token: string | null) =>
     axios.create({
         baseURL: paths.baseUrl,
         headers: {
-            Authorization: `Bearer ${token}`,
+            // Authorization: `Bearer ${token}`,
             ContentTye: 'application/json'
         }
     })
